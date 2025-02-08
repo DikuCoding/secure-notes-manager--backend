@@ -7,4 +7,8 @@ class User < ApplicationRecord
   enum role: { user: 0, admin: 1 }
 
   validates :role, presence: true
+
+  def inspect
+    attributes.except("encrypted_password").inspect
+  end
 end
