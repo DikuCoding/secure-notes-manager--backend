@@ -38,6 +38,9 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem 'devise'
+  gem 'devise-jwt'
+  gem 'bcrypt'  # For password encryption
 end
 
 
